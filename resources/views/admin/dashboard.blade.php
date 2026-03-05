@@ -22,24 +22,24 @@
     <div class="container mx-auto p-6">
         <h2 class="text-2xl font-bold mb-6">Dashboard</h2>
 
-        <div class="grid grid-cols-4 gap-4 mb-6">
-            <div class="bg-white p-4 rounded shadow text-center">
-                <p class="text-gray-500">Total Users</p>
-                <p class="text-3xl font-bold text-blue-600">{{ $stats['total_users'] }}</p>
-            </div>
-            <div class="bg-white p-4 rounded shadow text-center">
-                <p class="text-gray-500">Total Transactions</p>
-                <p class="text-3xl font-bold text-green-600">{{ $stats['total_transactions'] }}</p>
-            </div>
-            <div class="bg-white p-4 rounded shadow text-center">
-                <p class="text-gray-500">Total Income</p>
-                <p class="text-3xl font-bold text-green-500">Rp {{ number_format($stats['total_income']) }}</p>
-            </div>
-            <div class="bg-white p-4 rounded shadow text-center">
-                <p class="text-gray-500">Total Expense</p>
-                <p class="text-3xl font-bold text-red-500">Rp {{ number_format($stats['total_expense']) }}</p>
-            </div>
+            <div class="grid grid-cols-4 gap-4 mb-6">
+        <div class="bg-white p-4 rounded shadow text-center">
+            <p class="text-gray-500">Total Users</p>
+            <p class="text-3xl font-bold text-blue-600">{{ $totalUsers }}</p>
         </div>
+        <div class="bg-white p-4 rounded shadow text-center">
+            <p class="text-gray-500">Total Transactions</p>
+            <p class="text-3xl font-bold text-green-600">{{ $totalTransactions }}</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow text-center">
+            <p class="text-gray-500">Total Income</p>
+            <p class="text-3xl font-bold text-green-500">Rp {{ number_format($totalIncome) }}</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow text-center">
+            <p class="text-gray-500">Total Expense</p>
+            <p class="text-3xl font-bold text-red-500">Rp {{ number_format($totalExpense) }}</p>
+        </div>
+    </div>
 
         <div class="bg-white p-4 rounded shadow">
             <p>Selamat datang di Admin Panel FinCo!</p>
