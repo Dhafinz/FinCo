@@ -11,7 +11,7 @@ class AdminController extends Controller
 {
     public function index()
     {
-        // Dashboard Admin - Statistics
+        // Dashboard Admin - Statistics coba
         $totalUsers = User::count();
         $totalTransactions = Transaction::count();
         $totalIncome = Transaction::where('type', 'income')->sum('amount');
